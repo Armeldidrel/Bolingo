@@ -1,0 +1,142 @@
+<?php 
+    session_start();
+?> 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .w-30 {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: gray;
+        }
+        body{
+            background-color:#50280E;
+            color :white;
+        }
+       
+    </style>
+
+</head>
+
+<body class="d-grid place-items-center vh-100">
+
+
+    <div class=" w-800 d-flex  rounded shadow align-items-center justify-content-center p-5">
+        <form>
+            <h1 class="mb-3 fs-2">Modification des informations du profil</h1>
+            <div class="mb-3 d-flex align-items-center justify-content-center ">
+                <br>
+                <div class="w-30 rounded-circle">
+                    <img src="photo_2023-07-02_22-32-41.jpg" alt="" width="100%">
+                </div>
+
+            </div>
+            <div class="mb-3">
+                <label for="pseudonyme" class="form-label">Pseudonyme :</label>
+                <input type="email" class="form-control" id="pseudonyme"    value="Dido">
+            </div>
+            <div class="mb-3">
+                <label for="prenom">Nom :</label>
+                <input type="text" class="form-control" id="nom" value="Dido">
+            </div>
+
+            <div class="mb-3">
+                <label for="pseudonyme" class="form-label">Prenom :</label>
+                <input type="text" class="form-control" id="prenom"  value="Dido">
+            </div>
+            <div class="mb-3">
+                <label for="pseudonyme" class="form-label">Date de naissance :</label>
+                <input type="date" class="form-control" id="DateNais">
+            </div>
+            <div class="mb-3">
+                <label for="ville">* Dans quelle ville habitez-vous ?</label>
+                <select id="ville" name="ville" class="form-control">
+                    <option value="Brazzaville">Brazzaville</option>
+                    <option value="Pointe-Noire">Pointe-Noire</option>
+                    <option value="Dolisie">Dolisie</option>
+                    <option value="Nkayi">Nkayi</option>
+                    <option value="Impfondo">Impfondo</option>
+                    <option value="Madingou">Madingou</option>
+                    <option value="Owando">Owando</option>
+                    <option value="Sibiti">Sibiti</option>
+                    <option value="Mossendjo">Mossendjo</option>
+                    <option value="Kinkala">Kinkala</option>
+                    <option value="Gamboma">Gamboma</option>
+                    <option value="Ewo">Ewo</option>
+                    <option value="Ouesso">Ouesso</option>
+                    <option value="Loandjili">Loandjili</option>
+                    <option value="Kayes">Kayes</option>
+                    <option value="Ouésso">Ouésso</option>
+                    <option value="Makoua">Makoua</option>
+                    <option value="Mossaka">Mossaka</option>
+                    <option value="Loutété">Loutété</option>
+                    <option value="Sibiti">Sibiti</option>
+                    <option value="Mossendjo">Mossendjo</option>
+                    <option value="Kinkala">Kinkala</option>
+                    <option value="Gamboma">Gamboma</option>
+                    <option value="Boko">Boko</option>
+                    <option value="Ouesso">Ouesso</option>
+                    <option value="Nkayi">Nkayi</option>
+                    <option value="Dolisie">Dolisie</option>
+                    <option value="Madingou">Madingou</option>
+                    <option value="Impfondo">Impfondo</option>
+                    <option value="Owando">Owando</option>
+                    <option value="Bétou">Bétou</option>
+                    <option value="Loubomo">Loubomo</option>
+                    <option value="Sibiti">Sibiti</option>
+                    <option value="Ewo">Ewo</option>
+                    <option value="Kayes">Kayes</option>
+                    <option value="Sembe">Sembe</option>
+                    <option value="Boundji">Boundji</option>
+                    <option value="Makoua">Makoua</option>
+                    <option value="Mossaka">Mossaka</option>
+                    <option value="Lékana">Lékana</option>
+                    <option value="Mossendjo">Mossendjo</option>
+                    <option value="Kinkala">Kinkala</option>
+                    <option value="Gamboma">Gamboma</option>
+                    <option value="Sibiti">Sibiti</option>
+                    <option value="Makabana">Makabana</option>
+                    <option value="Ouesso">Ouesso</option>
+                    <option value="Kibangou">Kibangou</option>
+                </select>
+            </div>
+            <h5>Changer de mot de passe</h5>
+    <div class="mb-3">
+        <label for="ancien_pass" class="form-label">Ancien mot de passe :</label>
+        <input type="password" class="form-control" id="ancien_pass"  value="Dido">
+    </div>
+    <div class="mb-3">
+        <label for="new_pass" class="form-label">Nouveau mot de passe :</label>
+        <input type="password" class="form-control" id="new_pass"  value="Dido">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enregister</button>
+    </form>
+    </div>
+    </div>
+    
+
+</body>
+
+</html>
+
+
+
+<?php 
+?> 
